@@ -8,7 +8,7 @@
 import Foundation
 import Alamofire
 
-// MARK: - ApodResponseProtocol
+// MARK: - Protocol
 
 protocol HomeListProtocol: AnyObject {
     func newsSuccess(news: [Resultt])
@@ -22,7 +22,7 @@ class HomeViewModel {
     private let networkManager = NetworkManager.shared
     weak var delegate: HomeListProtocol?
     
-    // MARK: - Fetch Apod
+    // MARK: - Fetch News
     
     func fetchNewsHome() {
         networkManager.request(router: .spaceNews) { [weak self] (result: Result<HomeModel, AFError>) in

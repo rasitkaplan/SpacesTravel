@@ -8,6 +8,8 @@
 import Foundation
 import UIKit
 
+// MARK: - TableView View Functions
+
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

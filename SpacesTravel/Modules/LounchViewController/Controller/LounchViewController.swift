@@ -9,31 +9,44 @@ import UIKit
 
 class LounchViewController: UIViewController {
 
-
-    @IBOutlet weak var tableView: UITableView!
+    // MARK: - Outlets
+    @IBOutlet weak private var tableView: UITableView!
+    
+    // MARK: - Variables
     
     var launch : [Launchh]?
     var viewModel = LaunchViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        RegisterTableView()
-        RegisterViewModel()
-        // Do any additional setup after loading the view.
+        setNavigationBar()
+        registerTableView()
+        registerViewModel()
     }
     
-    func RegisterTableView() {
+    // MARK: - Set Navigation
+    
+    private func setNavigationBar() {
+        self.title = "Launches"
+        self.navigationController?.navigationBar.barStyle = .black
+        self.navigationController?.navigationBar.tintColor = .white
+    }
+    
+    // MARK: - Register
+    
+    func registerTableView() {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "LaunchTableViewCell", bundle: nil), forCellReuseIdentifier: "LaunchTableViewCell")
     }
     
-    func RegisterViewModel() {
+    func registerViewModel() {
         viewModel.delegate = self
         viewModel.fetchUpcoming()
     }
 }
+
+// MARK: - TableView Functions
 
 extension LounchViewController: UITableViewDelegate , UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -53,6 +66,7 @@ extension LounchViewController: UITableViewDelegate , UITableViewDataSource {
         vc.launch = launch
     }
 }
+// MARK: - Protocols
 
 extension LounchViewController: LaunchProtocol {
     func launchSuccess(launch: [Launchh]) {

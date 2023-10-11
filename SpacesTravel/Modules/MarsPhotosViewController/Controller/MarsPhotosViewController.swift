@@ -9,29 +9,45 @@ import UIKit
 
 class MarsPhotosViewController: UIViewController {
 
-    @IBOutlet weak var marsTableView: UITableView!
+    // MARK: - Outlets
+    
+    @IBOutlet weak private var marsTableView: UITableView!
+    
+    // MARK: - Variables
     
     var marsPhotoModel: [LatestPhoto]?
     var viewModel = MarsPhotosViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Mars Photos"
-        RegisterTableView()
-        RegisterViewModel()
+        setNavigationBar()
+        registerTableView()
+        registerViewModel()
     }
     
-    func RegisterTableView() {
+    // MARK: - Set Navigation
+    
+    private func setNavigationBar() {
+        title = "Mars Photos"
+        self.navigationController?.navigationBar.barStyle = .black
+        self.navigationController?.navigationBar.tintColor = .white
+    }
+    
+    // MARK: - Register
+    
+    private func registerTableView() {
         marsTableView.delegate = self
         marsTableView.dataSource = self
         marsTableView.register(UINib(nibName: MarsPhotosTableViewCell.nameOfClass, bundle: nil), forCellReuseIdentifier: MarsPhotosTableViewCell.nameOfClass)
     }
     
-    func RegisterViewModel() {
+    private func registerViewModel() {
         viewModel.delegate = self
         viewModel.FetchMarsPhoto()
     }
 }
+
+// MARK: -  Protocols
 
 extension MarsPhotosViewController: MarsPhotosProtocol {
     
