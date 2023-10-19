@@ -11,13 +11,12 @@ import Kingfisher
 class EventTableViewCell: UITableViewCell {
     
     
-    @IBOutlet weak var eventImageView: UIImageView!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var locationLabel: UILabel!
-    @IBOutlet weak var descLabel: UILabel!
-    @IBOutlet weak var dateLabel: UILabel!
-    
-    @IBOutlet weak var countDownLabel: UILabel!
+    @IBOutlet fileprivate weak var eventImageView: UIImageView!
+    @IBOutlet fileprivate weak var nameLabel: UILabel!
+    @IBOutlet fileprivate weak var locationLabel: UILabel!
+    @IBOutlet fileprivate weak var descLabel: UILabel!
+    @IBOutlet fileprivate weak var dateLabel: UILabel!
+    @IBOutlet fileprivate weak var countDownLabel: UILabel!
     // MARK: - Properties
     
     weak var timer: Timer?

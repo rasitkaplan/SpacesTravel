@@ -14,14 +14,18 @@ class HomeViewController: UIViewController {
     @IBOutlet weak private var collectionView: UICollectionView!
     @IBOutlet weak private var tableView: UITableView!
     
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     // MARK: - Variables
     
     var home : [Resultt]?
     var titlee : TitleModel?
     var viewModel = HomeViewModel()
     
+    // MARK: - Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        showSpinner()
         setNavigationBar()
         registerTableView()
         registerCollectionView()
@@ -50,6 +54,18 @@ class HomeViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.register(UINib(nibName: "HomeCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "HomeCollectionViewCell")
     }
+    
+    // MARK: - ActivityIndicator
+    
+    private func showSpinner() {
+        activityIndicator.startAnimating()
+        activityIndicator.isHidden = false
+    }
+
+    private func hideSpinner() {
+        activityIndicator.stopAnimating()
+        activityIndicator.isHidden = true
+    }
 }
 // MARK: - Protocols
 
@@ -57,6 +73,7 @@ extension HomeViewController: HomeListProtocol {
     func newsSuccess(news: [Resultt]) {
         self.home = news
         tableView.reloadData()
+        hideSpinner()
     }
 }
     

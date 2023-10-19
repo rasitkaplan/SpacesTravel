@@ -15,6 +15,14 @@
 		6C143BCB2ACB445300C3EF74 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C143BCA2ACB445300C3EF74 /* EventModel.swift */; };
 		6C143BCF2ACB459100C3EF74 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C143BCD2ACB459100C3EF74 /* EventTableViewCell.xib */; };
 		6C143BD02ACB459100C3EF74 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C143BCE2ACB459100C3EF74 /* EventTableViewCell.swift */; };
+		6C31C9682AE1ABA8000161E9 /* LounchViewController + TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C31C9672AE1ABA8000161E9 /* LounchViewController + TableView.swift */; };
+		6C586EA32AD9875C00A7FA7F /* AstronomyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C586EA12AD9875C00A7FA7F /* AstronomyViewController.xib */; };
+		6C586EA42AD9875C00A7FA7F /* AstronomyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C586EA22AD9875C00A7FA7F /* AstronomyViewController.swift */; };
+		6C586EA62AD9877600A7FA7F /* AstronomyViewController + TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C586EA52AD9877600A7FA7F /* AstronomyViewController + TableView.swift */; };
+		6C586EA92AD9891C00A7FA7F /* AstronomyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C586EA72AD9891C00A7FA7F /* AstronomyTableViewCell.xib */; };
+		6C586EAA2AD9891C00A7FA7F /* AstronomyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C586EA82AD9891C00A7FA7F /* AstronomyTableViewCell.swift */; };
+		6C586EAD2AD9899300A7FA7F /* AstronomyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C586EAC2AD9899300A7FA7F /* AstronomyModel.swift */; };
+		6C586EAF2AD98DBA00A7FA7F /* AstronomyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C586EAE2AD98DBA00A7FA7F /* AstronomyViewModel.swift */; };
 		6C6AE4DC2AC45B4D005AD5F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6AE4DB2AC45B4D005AD5F4 /* AppDelegate.swift */; };
 		6C6AE4E02AC45B4D005AD5F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6AE4DF2AC45B4D005AD5F4 /* ViewController.swift */; };
 		6C6AE4E32AC45B4D005AD5F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C6AE4E12AC45B4D005AD5F4 /* Main.storyboard */; };
@@ -48,6 +56,14 @@
 		6C6AE53B2AC5C128005AD5F4 /* LaunchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C6AE5392AC5C128005AD5F4 /* LaunchTableViewCell.xib */; };
 		6C6AE53C2AC5C128005AD5F4 /* LaunchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6AE53A2AC5C128005AD5F4 /* LaunchTableViewCell.swift */; };
 		6C6AE53E2AC5C148005AD5F4 /* LaunchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6AE53D2AC5C148005AD5F4 /* LaunchModel.swift */; };
+		6C71624B2ADD606E001626DF /* SpaceProgramsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C7162492ADD606E001626DF /* SpaceProgramsViewController.xib */; };
+		6C71624C2ADD606E001626DF /* SpaceProgramsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C71624A2ADD606E001626DF /* SpaceProgramsViewController.swift */; };
+		6C71624E2ADD607F001626DF /* SpaceProgramsViewController + TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C71624D2ADD607F001626DF /* SpaceProgramsViewController + TableView.swift */; };
+		6C7162502ADD6093001626DF /* SpaceProgramsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C71624F2ADD6093001626DF /* SpaceProgramsViewModel.swift */; };
+		6C7162542ADD60C0001626DF /* SpaceProgramsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C7162522ADD60C0001626DF /* SpaceProgramsTableViewCell.xib */; };
+		6C7162552ADD60C0001626DF /* SpaceProgramsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7162532ADD60C0001626DF /* SpaceProgramsTableViewCell.swift */; };
+		6C7162582ADD60F5001626DF /* SpaceProgramsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7162572ADD60F5001626DF /* SpaceProgramsModel.swift */; };
+		6C71625B2AE15E38001626DF /* HomeTitleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C71625A2AE15E38001626DF /* HomeTitleModel.swift */; };
 		6CB328E02ACB5F9C00201CB6 /* MarsPhotosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CB328DE2ACB5F9C00201CB6 /* MarsPhotosViewController.xib */; };
 		6CB328E12ACB5F9C00201CB6 /* MarsPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB328DF2ACB5F9C00201CB6 /* MarsPhotosViewController.swift */; };
 		6CB328E32ACB601E00201CB6 /* MarsPhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB328E22ACB601E00201CB6 /* MarsPhotosViewModel.swift */; };
@@ -68,6 +84,14 @@
 		6C143BCA2ACB445300C3EF74 /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
 		6C143BCD2ACB459100C3EF74 /* EventTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
 		6C143BCE2ACB459100C3EF74 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		6C31C9672AE1ABA8000161E9 /* LounchViewController + TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LounchViewController + TableView.swift"; sourceTree = "<group>"; };
+		6C586EA12AD9875C00A7FA7F /* AstronomyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AstronomyViewController.xib; sourceTree = "<group>"; };
+		6C586EA22AD9875C00A7FA7F /* AstronomyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyViewController.swift; sourceTree = "<group>"; };
+		6C586EA52AD9877600A7FA7F /* AstronomyViewController + TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstronomyViewController + TableView.swift"; sourceTree = "<group>"; };
+		6C586EA72AD9891C00A7FA7F /* AstronomyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AstronomyTableViewCell.xib; sourceTree = "<group>"; };
+		6C586EA82AD9891C00A7FA7F /* AstronomyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyTableViewCell.swift; sourceTree = "<group>"; };
+		6C586EAC2AD9899300A7FA7F /* AstronomyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyModel.swift; sourceTree = "<group>"; };
+		6C586EAE2AD98DBA00A7FA7F /* AstronomyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyViewModel.swift; sourceTree = "<group>"; };
 		6C6AE4D82AC45B4D005AD5F4 /* SpacesTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpacesTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C6AE4DB2AC45B4D005AD5F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C6AE4DF2AC45B4D005AD5F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +127,14 @@
 		6C6AE5392AC5C128005AD5F4 /* LaunchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchTableViewCell.xib; sourceTree = "<group>"; };
 		6C6AE53A2AC5C128005AD5F4 /* LaunchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTableViewCell.swift; sourceTree = "<group>"; };
 		6C6AE53D2AC5C148005AD5F4 /* LaunchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchModel.swift; sourceTree = "<group>"; };
+		6C7162492ADD606E001626DF /* SpaceProgramsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpaceProgramsViewController.xib; sourceTree = "<group>"; };
+		6C71624A2ADD606E001626DF /* SpaceProgramsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceProgramsViewController.swift; sourceTree = "<group>"; };
+		6C71624D2ADD607F001626DF /* SpaceProgramsViewController + TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SpaceProgramsViewController + TableView.swift"; sourceTree = "<group>"; };
+		6C71624F2ADD6093001626DF /* SpaceProgramsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceProgramsViewModel.swift; sourceTree = "<group>"; };
+		6C7162522ADD60C0001626DF /* SpaceProgramsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpaceProgramsTableViewCell.xib; sourceTree = "<group>"; };
+		6C7162532ADD60C0001626DF /* SpaceProgramsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceProgramsTableViewCell.swift; sourceTree = "<group>"; };
+		6C7162572ADD60F5001626DF /* SpaceProgramsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceProgramsModel.swift; sourceTree = "<group>"; };
+		6C71625A2AE15E38001626DF /* HomeTitleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTitleModel.swift; sourceTree = "<group>"; };
 		6CB328DE2ACB5F9C00201CB6 /* MarsPhotosViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarsPhotosViewController.xib; sourceTree = "<group>"; };
 		6CB328DF2ACB5F9C00201CB6 /* MarsPhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsPhotosViewController.swift; sourceTree = "<group>"; };
 		6CB328E22ACB601E00201CB6 /* MarsPhotosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsPhotosViewModel.swift; sourceTree = "<group>"; };
@@ -179,6 +211,51 @@
 			path = EventTableViewCell;
 			sourceTree = "<group>";
 		};
+		6C586E9D2AD983E800A7FA7F /* AstronomyViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6C586EA02AD9872900A7FA7F /* View */,
+				6C586E9F2AD9872300A7FA7F /* ViewModel */,
+				6C586E9E2AD9871D00A7FA7F /* Controller */,
+			);
+			path = AstronomyViewController;
+			sourceTree = "<group>";
+		};
+		6C586E9E2AD9871D00A7FA7F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6C586EA12AD9875C00A7FA7F /* AstronomyViewController.xib */,
+				6C586EA22AD9875C00A7FA7F /* AstronomyViewController.swift */,
+				6C586EA52AD9877600A7FA7F /* AstronomyViewController + TableView.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6C586E9F2AD9872300A7FA7F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6C586EAE2AD98DBA00A7FA7F /* AstronomyViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6C586EA02AD9872900A7FA7F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6C586EA72AD9891C00A7FA7F /* AstronomyTableViewCell.xib */,
+				6C586EA82AD9891C00A7FA7F /* AstronomyTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6C586EAB2AD9895B00A7FA7F /* AstronomyModel */ = {
+			isa = PBXGroup;
+			children = (
+				6C586EAC2AD9899300A7FA7F /* AstronomyModel.swift */,
+			);
+			path = AstronomyModel;
+			sourceTree = "<group>";
+		};
 		6C6AE4CF2AC45B4D005AD5F4 = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +296,8 @@
 		6C6AE4F22AC45B69005AD5F4 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				6C7162452ADD6030001626DF /* SpaceProgramsViewController */,
+				6C586E9D2AD983E800A7FA7F /* AstronomyViewController */,
 				6CB328DA2ACB5F2500201CB6 /* MarsPhotosViewController */,
 				6C6AE53F2AC601E9005AD5F4 /* EventViewController */,
 				6C6AE5292AC5BD3B005AD5F4 /* LounchViewController */,
@@ -259,6 +338,9 @@
 		6C6AE5022AC45DCF005AD5F4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6C7162592AE15E07001626DF /* HomeTitleModel */,
+				6C7162562ADD60CF001626DF /* SpaceProgramsModel */,
+				6C586EAB2AD9895B00A7FA7F /* AstronomyModel */,
 				6CB328E42ACB60C200201CB6 /* MarsPhotosModel */,
 				6C143BC92ACB444000C3EF74 /* EventModel */,
 				6C6AE5382AC5C0A0005AD5F4 /* LaunchModel */,
@@ -359,6 +441,7 @@
 			children = (
 				6C6AE52B2AC5BE4D005AD5F4 /* LounchViewController.xib */,
 				6C6AE52C2AC5BE4D005AD5F4 /* LounchViewController.swift */,
+				6C31C9672AE1ABA8000161E9 /* LounchViewController + TableView.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -404,6 +487,59 @@
 				6C143BBE2ACB418B00C3EF74 /* Controller */,
 			);
 			path = EventViewController;
+			sourceTree = "<group>";
+		};
+		6C7162452ADD6030001626DF /* SpaceProgramsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6C7162482ADD6056001626DF /* View */,
+				6C7162472ADD6050001626DF /* ViewModel */,
+				6C7162462ADD6049001626DF /* Controller */,
+			);
+			path = SpaceProgramsViewController;
+			sourceTree = "<group>";
+		};
+		6C7162462ADD6049001626DF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6C7162492ADD606E001626DF /* SpaceProgramsViewController.xib */,
+				6C71624A2ADD606E001626DF /* SpaceProgramsViewController.swift */,
+				6C71624D2ADD607F001626DF /* SpaceProgramsViewController + TableView.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6C7162472ADD6050001626DF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6C71624F2ADD6093001626DF /* SpaceProgramsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6C7162482ADD6056001626DF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6C7162522ADD60C0001626DF /* SpaceProgramsTableViewCell.xib */,
+				6C7162532ADD60C0001626DF /* SpaceProgramsTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6C7162562ADD60CF001626DF /* SpaceProgramsModel */ = {
+			isa = PBXGroup;
+			children = (
+				6C7162572ADD60F5001626DF /* SpaceProgramsModel.swift */,
+			);
+			path = SpaceProgramsModel;
+			sourceTree = "<group>";
+		};
+		6C7162592AE15E07001626DF /* HomeTitleModel */ = {
+			isa = PBXGroup;
+			children = (
+				6C71625A2AE15E38001626DF /* HomeTitleModel.swift */,
+			);
+			path = HomeTitleModel;
 			sourceTree = "<group>";
 		};
 		6CB328DA2ACB5F2500201CB6 /* MarsPhotosViewController */ = {
@@ -534,6 +670,7 @@
 				6C6AE4EB2AC45B4F005AD5F4 /* LaunchScreen.storyboard in Resources */,
 				6C6AE52D2AC5BE4D005AD5F4 /* LounchViewController.xib in Resources */,
 				6C6AE4E82AC45B4F005AD5F4 /* Assets.xcassets in Resources */,
+				6C71624B2ADD606E001626DF /* SpaceProgramsViewController.xib in Resources */,
 				6C6AE4FB2AC45C16005AD5F4 /* HomeViewController.xib in Resources */,
 				6C6AE4E32AC45B4D005AD5F4 /* Main.storyboard in Resources */,
 				6C6AE5202AC46224005AD5F4 /* HomeCollectionViewCell.xib in Resources */,
@@ -541,6 +678,9 @@
 				6C143BC32ACB426E00C3EF74 /* EventViewController.xib in Resources */,
 				6C6AE51B2AC46209005AD5F4 /* HomeTableViewCell.xib in Resources */,
 				6C6AE4F62AC45B94005AD5F4 /* SplashViewController.xib in Resources */,
+				6C586EA92AD9891C00A7FA7F /* AstronomyTableViewCell.xib in Resources */,
+				6C586EA32AD9875C00A7FA7F /* AstronomyViewController.xib in Resources */,
+				6C7162542ADD60C0001626DF /* SpaceProgramsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,11 +733,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C586EAF2AD98DBA00A7FA7F /* AstronomyViewModel.swift in Sources */,
+				6C7162582ADD60F5001626DF /* SpaceProgramsModel.swift in Sources */,
 				6C6AE53E2AC5C148005AD5F4 /* LaunchModel.swift in Sources */,
 				6C6AE5012AC45D9F005AD5F4 /* NetworkHelper.swift in Sources */,
 				6C6AE50C2AC45E40005AD5F4 /* Date+Extensions.swift in Sources */,
 				6C6AE5322AC5BE83005AD5F4 /* LaunchViewModel.swift in Sources */,
 				6C6AE53C2AC5C128005AD5F4 /* LaunchTableViewCell.swift in Sources */,
+				6C586EA62AD9877600A7FA7F /* AstronomyViewController + TableView.swift in Sources */,
 				6C6AE4FF2AC45D90005AD5F4 /* NetworkManager.swift in Sources */,
 				6C6AE4FC2AC45C16005AD5F4 /* HomeViewController.swift in Sources */,
 				6C6AE50E2AC45E49005AD5F4 /* String+Extensions.swift in Sources */,
@@ -605,6 +748,7 @@
 				6C6AE4E02AC45B4D005AD5F4 /* ViewController.swift in Sources */,
 				6CB328E82ACB625400201CB6 /* MarsPhotosViewController + TableView.swift in Sources */,
 				6C143BC42ACB426E00C3EF74 /* EventViewController.swift in Sources */,
+				6C7162502ADD6093001626DF /* SpaceProgramsViewModel.swift in Sources */,
 				6C6AE5052AC45DE5005AD5F4 /* HomeModel.swift in Sources */,
 				6C6AE5252AC5AC14005AD5F4 /* HomeViewController + TableView.swift in Sources */,
 				6CE737CB2AD6D45B00460D42 /* TextColor + Extensions.swift in Sources */,
@@ -612,18 +756,26 @@
 				6C6AE5282AC5B43D005AD5F4 /* TitleModel.swift in Sources */,
 				6C143BC62ACB433800C3EF74 /* EventViewController + TableView.swift in Sources */,
 				6CB328E12ACB5F9C00201CB6 /* MarsPhotosViewController.swift in Sources */,
+				6C7162552ADD60C0001626DF /* SpaceProgramsTableViewCell.swift in Sources */,
 				6CB328E62ACB60D700201CB6 /* MarsPhotosModel.swift in Sources */,
 				6CB328EC2ACB62F100201CB6 /* MarsPhotosTableViewCell.swift in Sources */,
 				6CB328E32ACB601E00201CB6 /* MarsPhotosViewModel.swift in Sources */,
 				6C6AE52E2AC5BE4D005AD5F4 /* LounchViewController.swift in Sources */,
 				6C6AE5122AC45E65005AD5F4 /* NSObject+Extensions.swift in Sources */,
+				6C71624C2ADD606E001626DF /* SpaceProgramsViewController.swift in Sources */,
+				6C586EA42AD9875C00A7FA7F /* AstronomyViewController.swift in Sources */,
 				6C143BCB2ACB445300C3EF74 /* EventModel.swift in Sources */,
 				6C6AE5212AC46224005AD5F4 /* HomeCollectionViewCell.swift in Sources */,
+				6C71624E2ADD607F001626DF /* SpaceProgramsViewController + TableView.swift in Sources */,
+				6C586EAD2AD9899300A7FA7F /* AstronomyModel.swift in Sources */,
 				6C143BC82ACB441A00C3EF74 /* EventViewModel.swift in Sources */,
 				6C6AE50A2AC45E32005AD5F4 /* UILabel+Extensions.swift in Sources */,
 				6C6AE4E62AC45B4D005AD5F4 /* SpacesTravel.xcdatamodeld in Sources */,
+				6C71625B2AE15E38001626DF /* HomeTitleModel.swift in Sources */,
+				6C31C9682AE1ABA8000161E9 /* LounchViewController + TableView.swift in Sources */,
 				6C6AE4F72AC45B94005AD5F4 /* SplashViewController.swift in Sources */,
 				6C143BD02ACB459100C3EF74 /* EventTableViewCell.swift in Sources */,
+				6C586EAA2AD9891C00A7FA7F /* AstronomyTableViewCell.swift in Sources */,
 				6C6AE5172AC45EE6005AD5F4 /* HomeViewModel.swift in Sources */,
 				6C6AE51C2AC46209005AD5F4 /* HomeTableViewCell.swift in Sources */,
 				6C6AE5232AC5ABAB005AD5F4 /* HomeViewController + CollectionView.swift in Sources */,

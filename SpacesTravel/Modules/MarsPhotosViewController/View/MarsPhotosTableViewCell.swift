@@ -9,16 +9,20 @@ import UIKit
 
 class MarsPhotosTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var firstLabel: UILabel!
-    @IBOutlet weak var secandLabel: UILabel!
-    @IBOutlet weak var anamLabel: UILabel!
-    @IBOutlet weak var babamIcinLabel: UILabel!
-    @IBOutlet weak var marsImageView: UIImageView!
+    // MARK: - Outlets
+    
+    @IBOutlet fileprivate weak var firstLabel: UILabel!
+    @IBOutlet fileprivate weak var secandLabel: UILabel!
+    @IBOutlet fileprivate weak var anamLabel: UILabel!
+    @IBOutlet fileprivate weak var babamIcinLabel: UILabel!
+    @IBOutlet fileprivate weak var marsImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    // MARK: - SetCell
     
     func setCell(photoModel: LatestPhoto) {
         marsImageView.kf.setImage(with: photoModel.imgSrc?.asURL)

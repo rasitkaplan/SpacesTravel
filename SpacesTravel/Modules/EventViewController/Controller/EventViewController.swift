@@ -13,6 +13,7 @@ class EventViewController: UIViewController {
     
     @IBOutlet weak private var eventTableView: UITableView!
     
+    @IBOutlet weak private var activityIndicator: UIActivityIndicatorView!
     // MARK: - Variables
     
     var viewModel = PastEventsViewModel()
@@ -20,6 +21,7 @@ class EventViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        showSpinner()
         setNavigationBar()
         registerTableView()
         registerViewModel()
@@ -44,6 +46,18 @@ class EventViewController: UIViewController {
         viewModel.delegate = self
         viewModel.fetchPastEvents()
     }
+    
+    // MARK: - ActivityIndicator
+    
+    private func showSpinner() {
+        activityIndicator.startAnimating()
+        activityIndicator.isHidden = false
+    }
+
+    private func hideSpinner() {
+        activityIndicator.stopAnimating()
+        activityIndicator.isHidden = true
+    }
 }
 
 // MARK: - Protocol
@@ -52,6 +66,7 @@ extension EventViewController : PastEventsResponseProtocol {
     func pastEventsSuccess(pastEvents: [Past]) {
         self.event = pastEvents
         eventTableView.reloadData()
+        hideSpinner()
     }
     
     func pastEventsFail(error: String) {

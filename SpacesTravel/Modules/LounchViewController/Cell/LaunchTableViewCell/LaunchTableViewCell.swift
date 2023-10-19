@@ -10,12 +10,14 @@ import Kingfisher
 
 class LaunchTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var imageeView: UIImageView!
-    @IBOutlet weak var launchName: UILabel!
-    @IBOutlet weak var locationNameLabel: UILabel!
-    @IBOutlet weak var rocketNameLabel: UILabel!
-    @IBOutlet weak var countDownLabel: UILabel!
-    @IBOutlet weak var dateLabel: UILabel!
+    // MARK: - Outlets
+    
+    @IBOutlet fileprivate weak var imageeView: UIImageView!
+    @IBOutlet fileprivate weak var launchName: UILabel!
+    @IBOutlet fileprivate weak var locationNameLabel: UILabel!
+    @IBOutlet fileprivate weak var rocketNameLabel: UILabel!
+    @IBOutlet fileprivate weak var countDownLabel: UILabel!
+    @IBOutlet fileprivate weak var dateLabel: UILabel!
     
     var countdownDate: Date?
     weak var timer: Timer?
@@ -27,15 +29,17 @@ class LaunchTableViewCell: UITableViewCell {
             stopTimer()
         }
     
+    // MARK: - SetCell
+    
     func setCell (launch: Launchh) {
         launchName.text = "Company Name : \(launch.name ?? "")"
         locationNameLabel.text = "Location Name : \(launch.pad?.location?.name ?? "")"
         rocketNameLabel.text = "Rocket Name : \(launch.launchServiceProvider?.name ?? "")"
         imageeView.kf.setImage(with: launch.image?.asURL)
-        dateLabel.text = "Date : \(Date.formattedDateFromString(dateString: launch.net ?? "") ?? "")"
+        dateLabel.text = "Launch Date : \(Date.formattedDateFromString(dateString: launch.net ?? "") ?? "")"
         startCountdown(launch: launch)
     }
-    
+
     func startCountdown(launch: Launchh) {
         guard let dateString = launch.net else {
             countDownLabel.text = "Could not get date information"

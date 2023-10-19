@@ -4,12 +4,14 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LounchViewController" customModule="SpacesTravel" customModuleProvider="target">
             <connections>
-                <outlet property="tableView" destination="0EB-rG-OcL" id="Myp-5v-hv3"/>
+                <outlet property="activityIndicator" destination="2bN-nu-VbQ" id="tMu-7Z-GXr"/>
+                <outlet property="tableView" destination="nDc-NB-7ds" id="JPc-Oi-BOM"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,21 +20,41 @@
             <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="0EB-rG-OcL">
-                    <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launches" translatesAutoresizingMaskIntoConstraints="NO" id="MKI-Ps-ql0">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="nDc-NB-7ds">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="2bN-nu-VbQ">
+                    <rect key="frame" x="145" y="393" width="112" height="79"/>
+                    <color key="color" systemColor="labelColor"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="0EB-rG-OcL" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Lmc-jk-kbs"/>
-                <constraint firstItem="0EB-rG-OcL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="QZ6-x1-mTW"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="0EB-rG-OcL" secondAttribute="bottom" id="XIp-wv-BOq"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0EB-rG-OcL" secondAttribute="trailing" id="vDZ-Ny-pEC"/>
+                <constraint firstItem="MKI-Ps-ql0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2cC-oS-QLJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="MKI-Ps-ql0" secondAttribute="bottom" constant="-34" id="7zt-AU-Of1"/>
+                <constraint firstItem="nDc-NB-7ds" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="8FM-OD-V44"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="2bN-nu-VbQ" secondAttribute="bottom" constant="338" id="B2x-eP-NIH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MKI-Ps-ql0" secondAttribute="trailing" id="CwF-DJ-bIx"/>
+                <constraint firstItem="2bN-nu-VbQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="145" id="HEb-od-8J6"/>
+                <constraint firstItem="MKI-Ps-ql0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="SOR-p2-jMB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2bN-nu-VbQ" secondAttribute="trailing" constant="133" id="Wd9-YM-Fgh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="nDc-NB-7ds" secondAttribute="bottom" constant="-34" id="eaS-qf-xWa"/>
+                <constraint firstItem="nDc-NB-7ds" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="f04-t7-No0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nDc-NB-7ds" secondAttribute="trailing" id="fSV-TF-TQG"/>
+                <constraint firstItem="2bN-nu-VbQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="346" id="l5C-66-lb7"/>
             </constraints>
-            <point key="canvasLocation" x="15" y="21"/>
+            <point key="canvasLocation" x="13.846153846153845" y="20.616113744075829"/>
         </view>
     </objects>
+    <resources>
+        <image name="launches" width="180" height="120"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

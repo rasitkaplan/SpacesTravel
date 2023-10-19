@@ -8,6 +8,8 @@
 import Foundation
 import UIKit
 
+// MARK: - TableView View Functions
+
 extension EventViewController : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

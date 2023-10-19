@@ -4,12 +4,14 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MarsPhotosViewController" customModule="SpacesTravel" customModuleProvider="target">
             <connections>
-                <outlet property="marsTableView" destination="CDF-fE-aDF" id="7HC-zK-CV4"/>
+                <outlet property="activityIndicator" destination="ZeA-1p-bxc" id="Knh-VJ-vMA"/>
+                <outlet property="marsTableView" destination="Qi1-PU-Ife" id="xe1-k1-N53"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,20 +20,41 @@
             <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="CDF-fE-aDF">
-                    <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marsphotos 1" translatesAutoresizingMaskIntoConstraints="NO" id="P9p-d2-nN8">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="810"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Qi1-PU-Ife">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="ZeA-1p-bxc">
+                    <rect key="frame" x="145" y="393" width="112" height="79"/>
+                    <color key="color" systemColor="labelColor"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="CDF-fE-aDF" secondAttribute="bottom" id="jVe-g4-ml6"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="CDF-fE-aDF" secondAttribute="trailing" id="mmx-1U-Xx7"/>
-                <constraint firstItem="CDF-fE-aDF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="p83-II-hh1"/>
-                <constraint firstItem="CDF-fE-aDF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="rg4-Gi-jyK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="P9p-d2-nN8" secondAttribute="trailing" id="2p3-Tz-cWv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="P9p-d2-nN8" secondAttribute="bottom" id="3KQ-bF-9eP"/>
+                <constraint firstItem="P9p-d2-nN8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="DZw-Xe-EzM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ZeA-1p-bxc" secondAttribute="bottom" constant="338" id="UMS-aH-kiB"/>
+                <constraint firstItem="P9p-d2-nN8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hY5-mY-fdn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Qi1-PU-Ife" secondAttribute="bottom" constant="-34" id="hvK-Wk-sUU"/>
+                <constraint firstItem="ZeA-1p-bxc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="346" id="jB1-MH-gtW"/>
+                <constraint firstItem="ZeA-1p-bxc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="145" id="mLN-l5-oL2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ZeA-1p-bxc" secondAttribute="trailing" constant="133" id="ny1-D3-ACS"/>
+                <constraint firstItem="Qi1-PU-Ife" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sMf-bY-BU4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Qi1-PU-Ife" secondAttribute="trailing" id="xKv-cT-DFY"/>
+                <constraint firstItem="Qi1-PU-Ife" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="z3T-4E-99m"/>
             </constraints>
-            <point key="canvasLocation" x="132" y="-11"/>
+            <point key="canvasLocation" x="130.76923076923077" y="-11.374407582938389"/>
         </view>
     </objects>
+    <resources>
+        <image name="marsphotos 1" width="341.33334350585938" height="267.33334350585938"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

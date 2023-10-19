@@ -10,15 +10,20 @@ import Kingfisher
 
 class HomeTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var titleLabell: UILabel!
-    @IBOutlet weak var imageeView: UIImageView!
-    @IBOutlet weak var summaryLabel: UILabel!
+    // MARK: - Outlets
+    
+    @IBOutlet fileprivate weak var titleLabell: UILabel!
+    @IBOutlet fileprivate weak var imageeView: UIImageView!
+    @IBOutlet fileprivate weak var summaryLabel: UILabel!
+    
+    // MARK: - Lifecycle
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
+    // MARK: - SetCell
+    
     func setCell(newhome: Resultt) {
         titleLabell.text = newhome.title
         if let publishedDate = Date.formattedDate(from: newhome.publishedAt ?? "" ) {

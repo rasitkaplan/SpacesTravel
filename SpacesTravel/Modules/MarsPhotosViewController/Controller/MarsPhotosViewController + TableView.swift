@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-// MARK: - UITableViewDelegate
+// MARK: - TableView View Functions
 
 extension MarsPhotosViewController : UITableViewDelegate, UITableViewDataSource {
     

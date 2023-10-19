@@ -37,6 +37,14 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             // MarsPhotos
             let mainMarsPhotosViewController = MarsPhotosViewController()
             self.navigationController?.pushViewController(mainMarsPhotosViewController, animated: true)
+        case 3:
+            // AstronomyPictureOfTheDays
+            let mainAstronomyViewController = AstronomyViewController()
+            self.navigationController?.pushViewController(mainAstronomyViewController, animated: true)
+        case 4:
+            // SpacePrograms
+            let mainAstronomyViewController = SpaceProgramsViewController()
+            self.navigationController?.pushViewController(mainAstronomyViewController, animated: true)
           default:
               break
         }

@@ -12,7 +12,7 @@ class SplashViewController: UIViewController {
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
             let vc = HomeViewController()
             self.navigationController?.setViewControllers([vc], animated: true)
         }

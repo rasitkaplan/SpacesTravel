@@ -4,11 +4,13 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="SpacesTravel" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="yG4-nw-eRT" id="cgp-mP-Xws"/>
                 <outlet property="collectionView" destination="Ikq-yV-w1e" id="Mxy-kw-UrX"/>
                 <outlet property="tableView" destination="MPq-e7-06l" id="dSN-tE-le1"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -19,6 +21,9 @@
             <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="gku-v4-16k">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                </imageView>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Ikq-yV-w1e">
                     <rect key="frame" x="0.0" y="97" width="390" height="130"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -33,20 +38,32 @@
                     </collectionViewFlowLayout>
                 </collectionView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="MPq-e7-06l">
-                    <rect key="frame" x="0.0" y="247" width="390" height="563"/>
+                    <rect key="frame" x="0.0" y="237" width="390" height="607"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="yG4-nw-eRT">
+                    <rect key="frame" x="145" y="393" width="112" height="79"/>
+                    <color key="color" systemColor="labelColor"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="gku-v4-16k" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="5FS-hc-yEs"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ikq-yV-w1e" secondAttribute="trailing" id="60Y-H3-ihM"/>
                 <constraint firstItem="Ikq-yV-w1e" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="66L-07-Klc"/>
-                <constraint firstItem="MPq-e7-06l" firstAttribute="top" secondItem="Ikq-yV-w1e" secondAttribute="bottom" constant="20" id="G0a-a8-atr"/>
-                <constraint firstItem="MPq-e7-06l" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="HgU-CK-wMA"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="MPq-e7-06l" secondAttribute="bottom" id="n1c-4W-Kaz"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MPq-e7-06l" secondAttribute="trailing" id="s9X-kF-yTA"/>
+                <constraint firstAttribute="bottom" secondItem="gku-v4-16k" secondAttribute="bottom" id="6Hm-dJ-NdX"/>
+                <constraint firstItem="MPq-e7-06l" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="83N-yg-zsb"/>
+                <constraint firstItem="yG4-nw-eRT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="145" id="95d-ap-38Q"/>
+                <constraint firstAttribute="bottom" secondItem="MPq-e7-06l" secondAttribute="bottom" id="Edl-to-QaF"/>
+                <constraint firstItem="gku-v4-16k" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="QJw-TU-CoW"/>
+                <constraint firstItem="yG4-nw-eRT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="346" id="X0L-an-5d5"/>
+                <constraint firstItem="MPq-e7-06l" firstAttribute="top" secondItem="Ikq-yV-w1e" secondAttribute="bottom" constant="10" id="XLV-04-HED"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yG4-nw-eRT" secondAttribute="trailing" constant="133" id="dn4-sY-hur"/>
+                <constraint firstItem="gku-v4-16k" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hX7-6W-gPB"/>
+                <constraint firstItem="MPq-e7-06l" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="pSL-OO-suT"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="yG4-nw-eRT" secondAttribute="bottom" constant="338" id="tkX-d4-MyH"/>
                 <constraint firstItem="Ikq-yV-w1e" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="z2u-gk-74J"/>
             </constraints>
             <userDefinedRuntimeAttributes>
@@ -66,4 +83,10 @@
             <point key="canvasLocation" x="130.76923076923077" y="-11.374407582938389"/>
         </view>
     </objects>
+    <resources>
+        <image name="splash" width="1429.3333740234375" height="1600"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

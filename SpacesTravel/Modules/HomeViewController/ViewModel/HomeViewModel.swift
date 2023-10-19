@@ -8,12 +8,11 @@
 import Foundation
 import Alamofire
 
-// MARK: - Protocol
+    // MARK: - Protocol
 
 protocol HomeListProtocol: AnyObject {
     func newsSuccess(news: [Resultt])
 }
-
 
 class HomeViewModel {
     

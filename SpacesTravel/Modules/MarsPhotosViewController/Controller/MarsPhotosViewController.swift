@@ -13,10 +13,13 @@ class MarsPhotosViewController: UIViewController {
     
     @IBOutlet weak private var marsTableView: UITableView!
     
+    @IBOutlet weak private var activityIndicator: UIActivityIndicatorView!
     // MARK: - Variables
     
     var marsPhotoModel: [LatestPhoto]?
     var viewModel = MarsPhotosViewModel()
+    
+    // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +48,18 @@ class MarsPhotosViewController: UIViewController {
         viewModel.delegate = self
         viewModel.FetchMarsPhoto()
     }
+    
+    // MARK: - ActivityIndicator
+    
+    private func showSpinner() {
+        activityIndicator.startAnimating()
+        activityIndicator.isHidden = false
+    }
+
+    private func hideSpinner() {
+        activityIndicator.stopAnimating()
+        activityIndicator.isHidden = true
+    }
 }
 
 // MARK: -  Protocols
@@ -54,6 +69,7 @@ extension MarsPhotosViewController: MarsPhotosProtocol {
     func marsphotosSuccess(latestPhoto: [LatestPhoto]) {
         self.marsPhotoModel = latestPhoto
         marsTableView.reloadData()
+        hideSpinner()
     }
     
     func marsphotosFail(error: String) {

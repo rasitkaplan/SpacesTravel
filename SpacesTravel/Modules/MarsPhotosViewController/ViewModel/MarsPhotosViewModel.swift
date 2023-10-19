@@ -8,7 +8,7 @@
 import Foundation
 import Alamofire
 
-
+    // MARK: - Protocols
 protocol MarsPhotosProtocol: AnyObject {
     func marsphotosSuccess(latestPhoto: [LatestPhoto])
     func marsphotosFail(error: String)
@@ -16,8 +16,12 @@ protocol MarsPhotosProtocol: AnyObject {
 
 class MarsPhotosViewModel {
     
+    // MARK: - Variables
+    
     private let networkManager = NetworkManager.shared
     weak var delegate: MarsPhotosProtocol?
+    
+    // MARK: - Fetch MarsPhoto
     
     func FetchMarsPhoto() {
         networkManager.request(router: .marsPhotos) { [weak self] (result: Result<MarsPhotos, AFError>) in

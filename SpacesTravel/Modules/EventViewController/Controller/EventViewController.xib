@@ -4,12 +4,14 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventViewController" customModule="SpacesTravel" customModuleProvider="target">
             <connections>
-                <outlet property="eventTableView" destination="CCy-sD-jXX" id="Hvo-vf-dHS"/>
+                <outlet property="activityIndicator" destination="Rxr-2S-66f" id="tLR-0s-dIx"/>
+                <outlet property="eventTableView" destination="fim-g2-AqG" id="91K-2Y-vRw"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,20 +20,41 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="CCy-sD-jXX">
-                    <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spaceprograms" translatesAutoresizingMaskIntoConstraints="NO" id="upo-Cq-vWz">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fim-g2-AqG">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Rxr-2S-66f">
+                    <rect key="frame" x="145" y="394" width="136" height="130"/>
+                    <color key="color" systemColor="labelColor"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="CCy-sD-jXX" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="8nW-7h-T1K"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="CCy-sD-jXX" secondAttribute="trailing" id="DeH-5J-E0Z"/>
-                <constraint firstItem="CCy-sD-jXX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="a1F-Sr-X5v"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="CCy-sD-jXX" secondAttribute="bottom" id="wda-8m-sjK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Rxr-2S-66f" secondAttribute="bottom" constant="338" id="3cq-no-EZ7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="upo-Cq-vWz" secondAttribute="bottom" id="3gH-lh-prI"/>
+                <constraint firstItem="Rxr-2S-66f" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="145" id="6Sg-CY-Qux"/>
+                <constraint firstItem="upo-Cq-vWz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Eiu-sm-kWc"/>
+                <constraint firstItem="fim-g2-AqG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="HHu-ys-6M4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="fim-g2-AqG" secondAttribute="bottom" constant="-34" id="JEY-an-H96"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Rxr-2S-66f" secondAttribute="trailing" constant="133" id="NI9-13-2d0"/>
+                <constraint firstItem="fim-g2-AqG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="OaA-5T-DcV"/>
+                <constraint firstItem="upo-Cq-vWz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="WkL-ju-vP5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fim-g2-AqG" secondAttribute="trailing" id="bmZ-1N-As3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="upo-Cq-vWz" secondAttribute="trailing" id="fib-ED-BZO"/>
+                <constraint firstItem="Rxr-2S-66f" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="346" id="sFl-Q6-ZXe"/>
             </constraints>
-            <point key="canvasLocation" x="132" y="-11"/>
+            <point key="canvasLocation" x="131.8840579710145" y="-11.383928571428571"/>
         </view>
     </objects>
+    <resources>
+        <image name="spaceprograms" width="1338.5" height="2005.5"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
